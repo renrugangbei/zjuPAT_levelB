@@ -31,4 +31,5 @@ int main() {
 		cout << number[j] << " ";
 	}
 	cout << number[j];	
+	return 0;
 }
