@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 using namespace std;
 int main() {
 	int winA = 0, loseA = 0, draw = 0;
@@ -18,7 +18,7 @@ int main() {
 			if (a=='J'&&b=='B') {
 				cntjA++;
 			}
-			if (b == 'J'&&a == 'b') {
+			if (b == 'J'&&a == 'B') {
 				cntjB++;
 			}
 			if (b == 'C'&&a == 'J') {
@@ -42,11 +42,11 @@ int main() {
 	} else if (cntjA >= cntbA&&cntjA >= cntcA) {
 		cout << "J" << " ";
 	}
-	if (cntbB >= cntcB&&cntbB >= cntjB) {
+	if ((cntbB >= cntcB)&&(cntbB >= cntjB)) {
 		cout << "B";
-	} else if (cntcB>= cntbB&&cntcB >= cntjB) {
+	} else if ((cntcB>= cntbB)&&(cntcB >= cntjB)) {
 		cout << "C" ;
-	} else if (cntjB >= cntbB&&cntjB >= cntcB) {
+	} else if ((cntjB >= cntbB)&&(cntjB >= cntcB)) {
 		cout << "J" ;
 	}
 }
